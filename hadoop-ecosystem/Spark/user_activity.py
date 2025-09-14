@@ -5,7 +5,7 @@ from pyspark.sql.functions import count
 spark = SparkSession.builder.appName("UserActivity").getOrCreate()
 
 # Load the ratings data
-ratings = spark.read.csv("/user/maria_dev/ml-100k/u.data", sep="\t", inferSchema=True)
+ratings = spark.read.csv("/user/maria_dev/u.data", sep="\t", inferSchema=True)
 ratings = ratings.withColumnRenamed("_c0", "user_id") \
                  .withColumnRenamed("_c1", "movie_id") \
                  .withColumnRenamed("_c2", "rating") \
