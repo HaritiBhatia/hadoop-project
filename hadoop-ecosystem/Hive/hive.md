@@ -30,7 +30,7 @@ We loaded our datasets into Hive tables using the following steps:
    ROW FORMAT DELIMITED
    FIELDS TERMINATED BY ','
    STORED AS TEXTFILE
-   LOCATION '/user/maria_dev/ml-100k/movies';
+   LOCATION '/user/ml-100k/movies';
    ```
 
 3. **Load Data**: 
